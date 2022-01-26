@@ -1,0 +1,19 @@
+package:
+ name: magnettools
+ version: "1.0.5"
+ 
+source:
+ path: .
+ # git_url: https://github.com/feelpp/magnettools
+ # git_rev: ba9af97951e000831e00911007da9abfd5d3b6f2
+ 
+build:
+ number: 0
+ 
+Requirements:
+ Build:
+   - g++
+   - cmake
+ run:
+   - libgcc
+ 
