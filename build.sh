@@ -13,11 +13,11 @@ cd build
 cmake .. \
       -DMAGNETTOOLS_ENABLE_OPTIONALDEPS=ON \
       -DMAGNETTOOLS_ENABLE_PYTHON=ON \
-      -DMAGNETTOOLS_PYTHON_VERSION=3
- 
+      -DMAGNETTOOLS_PYTHON_VERSION=3 \
+      -DCMAKE_INSTALL_INCLUDEDIR=$PREFIX
 
-make DESTDIR=${PREFIX}
-make DESTDIR=${PREFIX} install
+make 
+make install
 
 # # Build MagnetTools Python wrapper
 # cd ../Python
